@@ -1,10 +1,17 @@
-extends ../auth.layout.pug
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet' href='assets/styles/main.min.css')
+        title Сборка Gulp 4 + Webpack 4
+    body 
 
-block content
-    h1 Главная
-    form
-        label(for="email") email
-        input(name="email" id="email")
-        label(for="password") password
-        input(name="password" id="password")
-        button Войти
+        .wrapper
+            .maincontent
+                h2 Всем привет, pug работает
+                h1 Стили работают
+                include ../common/menu.pug
+                include ../common/footer.pug
+        script(src='assets/scripts/main.bundle.js')
