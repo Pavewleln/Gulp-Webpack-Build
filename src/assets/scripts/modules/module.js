@@ -1,5 +1,5 @@
 export default class Modal {
-    cons(){
-        console.log('Привет, webpack работает');
+    check(){
+        console.log('Привет, webpack и модули работают');
     }
 }
